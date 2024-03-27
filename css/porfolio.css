@@ -99,7 +99,16 @@ nav, a{
 
 /* summary of resume  */
 .section-resume{
-    text-align: center;
     margin-top: 50px;
     padding: 20px;
+}
+.resume-title{
+    text-align: center;
+}
+.resume-container{
+    display: flex;
+    gap: 10px;
+}
+.resume-item-title{
+    margin-bottom: 0px;
 }
