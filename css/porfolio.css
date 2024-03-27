@@ -20,7 +20,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 150px;
+    padding: 0 150px;
    
 }
 nav > ul{
@@ -38,16 +38,40 @@ nav, a{
 /* header style  */
 .header{
     background-color: #FFF8F3;
-   
+    background-image: url(../images/header_bg.png);
+   background-repeat: no-repeat;
+   background-position: bottom right;
+   background-size:auto;
 }
 
 /* banner style  */
 .banner{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 30px 150px;
+    justify-content: space-between;
+    padding: 30px 150px 0 150px;
 }
 .banner-profile{
-    height: 300px;
+    height: 80%;
+}
+.banner-content{
+    max-width: 50%;
+}
+
+/* main style */
+    main{
+        margin-left: 150px;
+        margin-right: 150px;
+       
+    }
+/* about style  */
+.section-about{
+    text-align: center;
+    background-color: #FFF8F3;
+    margin-top: 100px;
+    padding: 80px;
+}
+.about-info-container{
+    display: flex;
+    justify-content: space-around;
 }
