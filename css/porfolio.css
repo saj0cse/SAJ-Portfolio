@@ -75,3 +75,15 @@ nav, a{
     display: flex;
     justify-content: space-around;
 }
+
+/* what i do style  */
+.section-what-i-do{
+    text-align: center;
+    margin-top: 50px;
+    padding: 80px;
+}
+/* skill  */
+.section-skill{
+    display: flex;
+    
+}
