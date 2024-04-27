@@ -78,8 +78,9 @@ nav, a{
 /* what i do style  */
 .section-what-i-do{
     text-align: center;
+    justify-content: center;
     margin-top: 50px;
-    padding: 80px;
+    margin-bottom: 50px;
 }
 /* skill  */
 .section-skill{
@@ -131,4 +132,57 @@ footer{
     border: 0;
     margin-bottom: 25px;
     padding: 20px;
+}
+
+/* display hide  */
+.hide{
+    display: none;
+}
+
+/* mobile responsive style  */
+@media screen and (max-width: 960px ) {
+    main{
+        margin-left: 15px;
+        margin-right: 15px;
+       
+    }
+    .section-what-i-do{
+        
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    .section-skill, .resume-container, footer, .about-info-container, .banner{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .skill{
+        padding: 10px;
+        text-align: center;
+    }
+    footer{
+        padding: 10px;
+    }
+    .footer-column{
+        width: 90%;
+        padding: 20px;
+    }
+    .footer-contact input[type="text"], .footer-contact input[type="email"], textarea{
+        display: block;
+        width: 90%;
+       
+    }
+    .section-about{
+        padding: 10px;
+    }
+    .banner{
+        padding: 10px;
+    }
+    .banner-content{
+        max-width: 100%;
+    }
+    .banner-profile{
+        height: auto;
+    }
 }
