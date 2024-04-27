@@ -152,7 +152,7 @@ footer{
         padding: 5px;
     }
 
-    .section-skill, .resume-container, footer, .about-info-container, .banner{
+    .section-skill, .resume-container, footer, .about-info-container, .banner, nav, nav > ul{
         flex-direction: column;
         gap: 10px;
         text-align: center;
