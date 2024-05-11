@@ -1,10 +1,10 @@
 /* shared styles  */
 body {
   font-family: "Open Sans", sans-serif;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
-/* button_primary */
 .btn-primary {
   background-color: #fd6e0a;
   border-radius: 5px;
@@ -18,9 +18,10 @@ body {
   background-color: #f06f13;
   color: black;
 }
-.header-main-section,
-.banner {
-  max-width: 1440px;
+nav,
+.banner,
+main {
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -34,10 +35,6 @@ body {
 }
 
 /* nav style  */
-nav {
-  width: 80%;
-  margin: 0 auto;
-}
 .nav-main-section > h1 {
   font-weight: 900px;
   font-size: 2rem;
@@ -64,7 +61,6 @@ a:hover {
 
 /* banner style  */
 .banner {
-  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,31 +69,22 @@ a:hover {
   background-position: bottom right;
   background-size: 50%;
 }
-
 .banner-content,
 .banner-img {
   width: 50%;
 }
 .banner-img {
- display: flex;
- justify-content: end;
+  display: flex;
+  justify-content: end;
 }
-/* .banner-img >img {
-  object-fit: cover;
-  text-align: end;
-  } */
 
 /* main style */
-main {
-  margin-left: 150px;
-  margin-right: 150px;
-}
 /* about style  */
 .section-about {
   text-align: center;
-  background-color: #fff8f3;
-  margin-top: 100px;
-  padding: 80px;
+  /* background-color: #fff8f3; */
+  /* margin-top: 100px; */
+  padding: 50px;
 }
 .about-info-container {
   display: flex;
@@ -108,17 +95,20 @@ main {
 .section-what-i-do {
   text-align: center;
   justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding: 50px 0;
+  max-width: 500px;
+  margin: 0 auto;
 }
 /* skill  */
 .section-skill {
   display: flex;
+  justify-content: space-between;
   gap: 24px;
 }
 
 .skill {
-  padding: 30px;
+  margin-bottom: 30px;
+  /* padding: 30px; */
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
@@ -131,6 +121,7 @@ main {
 }
 .resume-title {
   text-align: center;
+  margin-bottom: 30px;
 }
 .resume-container {
   display: flex;
@@ -172,7 +163,8 @@ textarea {
 /* mobile responsive style  */
 @media screen and (max-width: 960px) {
   nav,
-  .banner {
+  .banner,
+  main {
     width: 90%;
     margin: 0 auto;
   }
@@ -183,19 +175,19 @@ textarea {
     align-items: center;
   }
 
+  /* banner styles  */
+  .banner {
+    background-size: 100%;
+  }
   .banner-content,
-.banner-img {
-  width: 100%;
-}
-
-.banner-img > img{
+  .banner-img {
+    width: 100%;
+  }
+  .banner-img > img {
     width: 100%;
   }
 
-  main {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
+  /* main styles  */
   .section-what-i-do {
     margin-top: 10px;
     padding: 5px;
