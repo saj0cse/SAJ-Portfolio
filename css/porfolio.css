@@ -1,188 +1,240 @@
-/* font style  */
+/* shared styles  */
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
 }
 
 /* button_primary */
-.btn-primary{
- background-color: #FD6E0A;
- border-radius: 5px;
- border: 0;
- padding: 15px 30px;
- font-weight: 700;
- color: white;
-
+.btn-primary {
+  background-color: #fd6e0a;
+  border-radius: 5px;
+  border: 0;
+  padding: 15px 30px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
 }
-
-/* nav style  */
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 150px;
-   
+.btn-primary:hover {
+  background-color: #f06f13;
+  color: black;
 }
-nav > ul{
-    display: flex;
-    align-items: center;
-}
-nav, li{
-    list-style:  none;
-    margin-right: 50px;
-}
-nav, a{
-    text-decoration: none;
+.header-main-section,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* header style  */
-.header{
-    background-color: #FFF8F3;
-    background-image: url('../images/header_bg.png');
-   background-repeat: no-repeat;
-   background-position: bottom right;
+.header {
+  background-color: #fff8f3;
+}
+.header-main-section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* nav style  */
+nav {
+  width: 80%;
+  margin: 0 auto;
+}
+.nav-main-section > h1 {
+  font-weight: 900px;
+  font-size: 2rem;
+}
+.nav-main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-list,
+a {
+  text-decoration: none;
+}
+.nav-list,
+a:hover {
+  color: black;
 }
 
 /* banner style  */
-.banner{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 150px 0 150px;
-}
-.banner-profile{
-    height: 80%;
-}
-.banner-content{
-    max-width: 50%;
+.banner {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../images/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 50%;
 }
 
-/* main style */
-    main{
-        margin-left: 150px;
-        margin-right: 150px;
-       
-    }
-/* about style  */
-.section-about{
-    text-align: center;
-    background-color: #FFF8F3;
-    margin-top: 100px;
-    padding: 80px;
+.banner-content,
+.banner-img {
+  width: 50%;
 }
-.about-info-container{
-    display: flex;
-    justify-content: space-around;
+.banner-img {
+ display: flex;
+ justify-content: end;
+}
+/* .banner-img >img {
+  object-fit: cover;
+  text-align: end;
+  } */
+
+/* main style */
+main {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+/* about style  */
+.section-about {
+  text-align: center;
+  background-color: #fff8f3;
+  margin-top: 100px;
+  padding: 80px;
+}
+.about-info-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* what i do style  */
-.section-what-i-do{
-    text-align: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.section-what-i-do {
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 /* skill  */
-.section-skill{
-    display: flex;
-    gap: 24px;
-    
+.section-skill {
+  display: flex;
+  gap: 24px;
 }
 
-.skill{
-    padding: 30px;
-    border-radius: 5px;
-    background: #FFF;
-    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
- 
+.skill {
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
 }
 
 /* summary of resume  */
-.section-resume{
-    margin-top: 50px;
-    padding: 20px;
+.section-resume {
+  margin-top: 50px;
+  padding: 20px;
 }
-.resume-title{
-    text-align: center;
+.resume-title {
+  text-align: center;
 }
-.resume-container{
-    display: flex;
-    gap: 10px;
+.resume-container {
+  display: flex;
+  gap: 10px;
 }
-.resume-download-btn{
-    text-align: center;
-    margin-top: 30px;
+.resume-download-btn {
+  text-align: center;
+  margin-top: 30px;
 }
 
 /* footer style  */
-footer{
-    display: flex;
-    background-color:#FFF8F3;
-    padding: 80px 150px;
-    margin-top: 100px;
+footer {
+  display: flex;
+  background-color: #fff8f3;
+  padding: 80px 150px;
+  margin-top: 100px;
 }
-.footer-column{
-    width: 50%;
-    padding: 20px;
+.footer-column {
+  width: 50%;
+  padding: 20px;
 }
 
-.footer-contact input[type="text"], .footer-contact input[type="email"], textarea{
-    display: block;
-    width: 100%;
-    border: 0;
-    margin-bottom: 25px;
-    padding: 20px;
+.footer-contact input[type="text"],
+.footer-contact input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  border: 0;
+  margin-bottom: 25px;
+  padding: 20px;
 }
 
 /* display hide  */
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
+/* ============================================ */
 /* mobile responsive style  */
-@media screen and (max-width: 960px ) {
-    main{
-        margin-left: 15px;
-        margin-right: 15px;
-       
-    }
-    .section-what-i-do{
-        
-        margin-top: 10px;
-        padding: 5px;
-    }
+@media screen and (max-width: 960px) {
+  nav,
+  .banner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-    .section-skill, .resume-container, footer, .about-info-container, .banner, nav, nav > ul{
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-    .skill{
-        padding: 10px;
-        text-align: center;
-    }
-    footer{
-        padding: 10px;
-    }
-    .footer-column{
-        width: 90%;
-        padding: 20px;
-    }
-    .footer-contact input[type="text"], .footer-contact input[type="email"], textarea{
-        display: block;
-        width: 90%;
-       
-    }
-    .section-about{
-        padding: 10px;
-    }
-    .banner{
-        padding: 10px;
-    }
-    .banner-content{
-        max-width: 100%;
-    }
-    .banner-profile{
-        height: auto;
-    }
+  .banner-content,
+.banner-img {
+  width: 100%;
+}
+
+.banner-img > img{
+    width: 100%;
+  }
+
+  main {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .section-what-i-do {
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .section-skill,
+  .resume-container,
+  footer,
+  .about-info-container,
+  .banner,
+  .nav-main-section {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .skill {
+    padding: 10px;
+    text-align: center;
+  }
+  footer {
+    padding: 10px;
+  }
+  .footer-column {
+    width: 90%;
+    padding: 20px;
+  }
+  .footer-contact input[type="text"],
+  .footer-contact input[type="email"],
+  textarea {
+    display: block;
+    width: 90%;
+  }
+  .section-about {
+    padding: 10px;
+  }
+  .banner-profile {
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+  }
 }
