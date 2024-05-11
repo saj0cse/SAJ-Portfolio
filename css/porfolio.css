@@ -3,6 +3,7 @@ body {
   font-family: "Open Sans", sans-serif;
   /* max-width: 1440px; */
   margin: 0 auto;
+  padding: 0px;
   line-height: 25px;
 }
 
@@ -163,15 +164,20 @@ a:hover {
 
 /* footer style  */
 footer {
-  display: flex;
   background-color: #fff8f3;
-  padding: 80px 150px;
-  margin-top: 100px;
+  margin-top: 50px;
+}
+.footer-uper-section{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0px;
 }
 
 .footer-column {
-  width: 50%;
-  padding: 20px;
+  width: 45%;
+  gap: 10%;
 }
 
 .footer-contact input[type="text"],
@@ -182,12 +188,27 @@ textarea {
   border: 0;
   margin-bottom: 25px;
   padding: 20px;
+
+
+}
+.footer-column > li{
+  margin-top: 5px;
 }
 
-/* display hide  */
-.hide {
-  display: none;
+.footer-lower-section{
+  text-align: center;
+  padding: 0 0 20px 0;
 }
+.footer-icon-div{
+  margin-top: 20px;
+}
+.footer-icon-div > a{
+  margin-left: 20px;
+}
+.fa-brands{
+  font-size: 1.3rem;
+}
+
 
 /* ============================================ */
 /* mobile responsive style  */
@@ -206,7 +227,7 @@ textarea {
   .nav-main-section,
   .eduction-content,
   .expreience-content,
-  footer {
+  .footer-uper-section {
     flex-direction: column;
     gap: 10px;
     text-align: center;
@@ -221,7 +242,8 @@ textarea {
   }
 
   /* banner styles  */
-  .banner {
+  .banner,
+   .footer-column{
     background-size: 100%;
   }
   .banner-profile {
@@ -270,9 +292,6 @@ textarea {
   .section-about {
     padding: 10px;
   }
-
-  
-
   /* resume styles */
   .content-item {
     width: 100%;
